@@ -3,6 +3,7 @@ import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Select, FormControl, MenuItem, makeStyles, InputLabel } from '@material-ui/core';
 import {
     BrowserRouter as Router,
@@ -58,11 +59,25 @@ function Header() {
                 </div>
                 <input className='Header-searchInput' type='text' />
                 <div className='Header-searchIconContainer'>
-                    <SearchIcon />
+                    <SearchIcon style={{ height: '1.5em', width: '1.5em', }} fill={' rgba(17, 17, 17, 0)'} />
                 </div>
                 
             </div>
-            
+            <div className='Header-language'>
+                    <div className='Header-languageCard'>
+                        <img className='Header-languageLabel' src='https://icon-library.com/images/american-flag-icon/american-flag-icon-11.jpg' />
+                        <ExpandMoreIcon className='nav-icon'/>
+                    </div>
+                    <Select>   
+                        <MenuItem value=''>English - EN</MenuItem>
+                        <hr className='parts' />
+                        <MenuItem value=''>Español - ES</MenuItem>
+                        <hr className='parts' />
+                        <MenuItem value=''>
+                        <img className='Header-languageLabel' src='https://icon-library.com/images/american-flag-icon/american-flag-icon-11.jpg' style={{ width: '20px', marginRight: '10px'}} />
+                        <span>You are shopping on Amazon.com</span> </MenuItem>
+                    </Select> 
+                </div>
             <div className='Header-navItems'>
                 {/*Login Name*/}
                 <div className='Header-option'>
@@ -84,7 +99,10 @@ function Header() {
                 </Link>
                 
             </div>
+            
         </div>
+       
+        
     )
 }
 

@@ -1,0 +1,8 @@
+.SubHeader-options {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 15px;
+}

@@ -1,14 +1,20 @@
 .Header {
   background-color: #0f1111;
   color: white;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.Header-logo {
+  margin: 15px;
+}
 .Header img {
   width: 100px;
   margin-left: 20px;
+}
+.Header-optionAddress {
+  margin: 5px;
 }
 .Header-option {
   display: flex;
@@ -21,9 +27,12 @@
 .Header-search {
   flex-grow: 1;
   display: flex;
-  height: 40px;
+  height: 46px;
   border-radius: 4px;
   overflow: hidden;
+  margin: 15px;
+  min-width: 50%;
+  max-width: 65%;
 }
 .Header-navSearch {
   position: relative;
@@ -42,22 +51,12 @@
   top: 5px;
   left: 23px;
   opacity: 0;
-  /* background: "#F3f3f3"; */
   width: 10px;
 }
-/* .Header-navSearchLabel {
-  padding-right: 5px;
-}
-.Header-navSearchSelect {
-  position: absolute;
-  top: 5px;
-  left: 23px;
-  opacity: 0.1;
-} */
 .Header-searchIconContainer {
-  width: 45px;
+  width: 5em;
   background-color: #febd69;
-  color: black;
+  color: rgba(17, 17, 17, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,12 +69,29 @@
 .Header-search input:focus {
   outline: none;
 }
+.Header-languageCard img {
+  width: 25px;
+  height: 18px;
+}
 .Header-search:focus-within {
   box-shadow: 0 0 0 3px #f90;
+}
+
+.Header-language {
+  position: relative;
+}
+
+.Header-languageCard {
+  display: flex;
+  align-items: flex-end;
 }
 .Header-navItems {
   display: flex;
   flex-direction: row;
+}
+.parts {
+  width: 80%;
+  margin-left: 18px;
 }
 a {
   display: flex;
@@ -100,4 +116,9 @@ a {
 .Header-cartSign {
   align-self: flex-end;
   font-weight: bold;
+}
+.SubHeader {
+  background-color: #232f3e;
+  color: white;
+  font-weight: 700;
 }
