@@ -1,0 +1,103 @@
+.Header {
+  background-color: #0f1111;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Header img {
+  width: 100px;
+  margin-left: 20px;
+}
+.Header-option {
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+.Header-optionLineTwo {
+  font-weight: bold;
+}
+.Header-search {
+  flex-grow: 1;
+  display: flex;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.Header-navSearch {
+  position: relative;
+}
+.Header-navSearchCard {
+  display: flex;
+  align-items: center;
+  color: black;
+  background: #f3f3f3;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.MuiInputBase-root.MuiInput-root.MuiInput-underline {
+  position: absolute;
+  top: 5px;
+  left: 23px;
+  opacity: 0;
+  /* background: "#F3f3f3"; */
+  width: 10px;
+}
+/* .Header-navSearchLabel {
+  padding-right: 5px;
+}
+.Header-navSearchSelect {
+  position: absolute;
+  top: 5px;
+  left: 23px;
+  opacity: 0.1;
+} */
+.Header-searchIconContainer {
+  width: 45px;
+  background-color: #febd69;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header-search input {
+  width: 100%;
+  border: none;
+  font-size: 15px;
+}
+.Header-search input:focus {
+  outline: none;
+}
+.Header-search:focus-within {
+  box-shadow: 0 0 0 3px #f90;
+}
+.Header-navItems {
+  display: flex;
+  flex-direction: row;
+}
+a {
+  display: flex;
+  flex-direction: row;
+  color: #f3f3f3;
+  text-decoration: none;
+}
+.Header-optionCart {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  position: relative;
+}
+.Header-cartCount {
+  font-weight: bold;
+  color: #f08804;
+  position: absolute;
+  left: 22%;
+  top: 9%;
+  text-shadow: 2px 1px 1px#0f1111;
+}
+.Header-cartSign {
+  align-self: flex-end;
+  font-weight: bold;
+}
